@@ -1,0 +1,25 @@
+*{
+    margin: 0 auto;
+}
+.nav-link{
+    font-family: 'HorrorScribbles';
+    font-size: 27px;
+}
+.navbar{
+    
+    margin-left: 65%;
+    width: 35%;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    background: #000;
+    border-radius: 40px;
+}
+button{
+    margin-left: 20%;
+}
+
+a p{
+    color: #ff4500
+}

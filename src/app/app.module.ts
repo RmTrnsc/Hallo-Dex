@@ -24,7 +24,8 @@ import { CandyListComponent } from './candy-list/candy-list.component';
     RouterModule.forRoot(
       [
         { path: "candylist", component: CandyListComponent, pathMatch:'full'},
-        { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' }
+        { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' },
+        { path: 'main', component: MainComponent, pathMatch: 'full' }
       ],
       {useHash: true}
     )
