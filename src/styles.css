@@ -15,37 +15,3 @@ body {
     background-image: url(/assets/ecranAccueil.jpg);
     background-size: 75em;
 }
-#title {
-    font-family: 'CF Halloween';
-    background: linear-gradient(to right, #fff, #ff4500, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-size: 4em;
-    margin-top: 1em;
-}
-#buttonStart {
-    text-align: center;
-    margin-top: 10em;
-}
-#buttonStart button {
-    display: inline-block;
-    padding: 5px 10px;
-    background: #000;
-    border: 2px solid #ff4500;
-}
-#buttonStart button p{
-    color: #ff4500;
-    font-size: 25px;
-    font-family: 'HorrorScribbles';
-}
-#buttonStart button:focus {
-    outline-style: none;
-    border-radius: 100px;
-    transition: 1.2s;
-}
-#buttonStart button:focus p {
-    color: #ff4500;
-    font-size: 3em;
-    transition: 1.2s;
-}
