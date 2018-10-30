@@ -78,7 +78,7 @@ background-image: url('/src/assets/halloween.jpg');
     left: 50%;
     top: -2px;
     margin-left: -25px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: r2821a(0, 0, 0, 0);
     width: 50px;
     text-align: center;
     }
