@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hallo-Dex';
+  IsHidden = false;
+  oneSelect() {
+    this.IsHidden = !this.IsHidden;
+  }
 }

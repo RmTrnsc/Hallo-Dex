@@ -1,32 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
+import { RouterModule} from '@angular/router';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FormulaireComponent } from './formulaire/formulaire.component';
-import { from } from 'rxjs';
-
-
-const appRoutes: Routes = [
-  { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' }
-
-];
+import { MainComponent } from './main/main.component';
+import { MapServiceService } from './map-service.service';
+import { CandyListComponent } from './candy-list/candy-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    MainComponent,
+    CandyListComponent
   ],
 
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
-
-
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(
+      [
+        { path: "candylist", component: CandyListComponent, pathMatch:'full'},
+        { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' }
+      ],
+      {useHash: true}
+    )
   ],
-
-  providers: [],
+  providers: [MapServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

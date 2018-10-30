@@ -1,8 +1,8 @@
-
-<div id="title">HALLODEX</div>
-
-<div id="buttonStart">
-  <button><p>START</p></button>
-</div>
-<app-formulaire></app-formulaire>
 <router-outlet></router-outlet>
+<div id="id"[hidden]="IsHidden">
+  <div id="title">HALLODEX</div>
+
+  <div id="buttonStart">
+    <a routerLink="/formulaire"><button (click)="oneSelect()">START</button></a>
+  </div>
+</div>
