@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { MapServiceService } from './map-service.service';
 import { CandyListComponent } from './candy-list/candy-list.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormulaireComponent,
     MainComponent,
-    CandyListComponent
+    CandyListComponent,
+    AcceuilComponent
   ],
 
   imports: [
@@ -24,8 +26,10 @@ import { CandyListComponent } from './candy-list/candy-list.component';
     HttpModule,
     RouterModule.forRoot(
       [
-        { path: "candylist", component: CandyListComponent, pathMatch:'full'},
-        { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' }
+        { path: 'candylist', component: CandyListComponent, pathMatch:'full'},
+        { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' },
+        { path: 'acceuil', component: AcceuilComponent, pathMatch: 'full'},
+        { path: '', redirectTo: 'acceuil', pathMatch: 'full'}
       ],
       {useHash: true}
     )
