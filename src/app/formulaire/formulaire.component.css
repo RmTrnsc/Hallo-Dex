@@ -1,0 +1,14 @@
+*{
+    margin: 0 auto;
+
+}
+.main-container {
+background-image: url('/src/assets/halloween.jpg');
+    width: 100%;
+    height: 50em;
+}
+
+.signup {
+    text-align: center;
+    color: white;
+}

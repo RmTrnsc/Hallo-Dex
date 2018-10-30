@@ -1,0 +1,23 @@
+td {
+    font-family: 'HorrorScribbles';
+    font-size: 22px;
+}
+#enTete {
+    font-size: 28px;
+    font-family: 'HorrorScribbles';
+    color: #d37204;
+}
+th {
+    font-family: 'HorrorScribbles';
+    font-size: 25px;
+}
+.impair {
+    color: #ff4500;
+}
+.pair {
+    color: #000;
+}
+.table {
+    width: 100%;
+}
+

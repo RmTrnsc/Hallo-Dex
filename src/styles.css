@@ -10,3 +10,13 @@
     font-style: normal;
     text-rendering: optimizeLegibility;
 }
+@font-face {
+    font-family: 'CF Trees';
+    src: url(/font/cf_one_two_trees/CFTrees.ttf) format('truetype');
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-image: url(/assets/ecranAccueil.jpg);
+    background-size: 75em;
+}
