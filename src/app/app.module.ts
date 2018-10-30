@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { MapServiceService } from './map-service.service';
+
 
 @NgModule({
   declarations: [
@@ -17,9 +17,14 @@ import { MapServiceService } from './map-service.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot(
+      [
+        { path: "Main", component: MainComponent, pathMatch: "full" }
+      ],
+      {useHash: true}
+    )
   ],
-  providers: [MapServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
