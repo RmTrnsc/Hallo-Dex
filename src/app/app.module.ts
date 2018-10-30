@@ -7,17 +7,30 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { MapServiceService } from './map-service.service';
+import { CandyListComponent } from './candy-list/candy-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    CandyListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot(
+      [
+        {
+          "path": "candylist",
+          "component": CandyListComponent,
+          pathMatch:'full'
+        },
+      ],
+      {
+        "useHash": true
+      }
+    )
   ],
   providers: [MapServiceService],
   bootstrap: [AppComponent]
