@@ -80,7 +80,8 @@ input {
     width: 50px;
     text-align: center;
 }
-.form-group {
+.form-group .btn {
+    margin-top: 1.5em;
 }
 .hr-or {
     height: 1px;
