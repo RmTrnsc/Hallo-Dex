@@ -16,13 +16,17 @@ background-image: url('/src/assets/halloween.jpg');
 */
 .container {
     background-image: url('/src/assets/halloween.jpg');
-        width: 100%;
-        height: 50em;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50em;
+    margin-bottom: 0;
     }
 
 
 .send-button{
-    background: #54C7C3;
+    background: #f78f08;
     width:100%;
     font-weight: 600;
     color:#fff;
@@ -74,7 +78,7 @@ background-image: url('/src/assets/halloween.jpg');
     left: 50%;
     top: -2px;
     margin-left: -25px;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     width: 50px;
     text-align: center;
     }
@@ -89,5 +93,13 @@ background-image: url('/src/assets/halloween.jpg');
     }
     h2{
     font-size: 20px;
+    }
+    input {
+        background-color: rgba(0, 0, 0, 0);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #fff;
+
     }
 }
