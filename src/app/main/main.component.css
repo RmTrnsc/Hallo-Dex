@@ -18,6 +18,8 @@
 }
 button{
     margin-left: 20%;
+    border: none;
+    outline-style: none;
 }
 
 a p{
