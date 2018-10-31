@@ -16,7 +16,7 @@
     border-radius: 40px;
 }
 ul {
-    height: 18em;
+    height: 13em;
 }
 li {
 }
@@ -26,6 +26,7 @@ button{
     outline-style: none;
 }
 a p{
+    text-align: center;
     color: #ff4500
 }
 
