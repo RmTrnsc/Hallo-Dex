@@ -1,27 +1,30 @@
 /***************************************NAVBAR********************************/
 
-*{
-    margin: 0 auto;
-}
 .nav-link{
     font-family: 'HorrorScribbles';
     font-size: 27px;
 }
 .navbar{
-    
-    margin-left: 65%;
-    width: 35%;
+    margin-top: 0.5em;
+    margin-left: 58%;
+    width: 42%;
     opacity: 0.85;
     position: absolute;
     top: 0;
-    z-index: 20;
+    z-index: 500;
     background: #000;
     border-radius: 40px;
 }
-button{
-    margin-left: 20%;
+ul {
+    height: 18em;
 }
-
+li {
+}
+button{
+    margin: 0 auto;
+    border: none;
+    outline-style: none;
+}
 a p{
     color: #ff4500
 }
@@ -31,6 +34,9 @@ a p{
 td {
     font-family: 'HorrorScribbles';
     font-size: 22px;
+}
+.table {
+    margin-top: 4em;
 }
 #enTete {
     font-size: 28px;

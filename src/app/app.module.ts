@@ -31,6 +31,8 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
       [
         { path: 'candylist', component: CandyListComponent, pathMatch:'full'},
         { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' },
+        { path: 'candymap', component: CandyMapComponent, pathMatch: 'full'},
+        { path: 'recapitulatif', component: RecapitulatifComponent, pathMatch: 'full'},
         { path: 'acceuil', component: AcceuilComponent, pathMatch: 'full'},
         { path: 'main', component: MainComponent, pathMatch: 'full'},
         { path: 'recapitulatif', component: RecapitulatifComponent, pathMatch: 'full'},
