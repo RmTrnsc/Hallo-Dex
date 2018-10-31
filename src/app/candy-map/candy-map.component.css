@@ -1,9 +1,4 @@
-p {
-    position: absolute;
-    font-family: 'HorrorScribbles';
-    font-size: 35px;
-    color: #ff4500;
-}
+
 @media only screen and (min-device-width: 668px) and (max-device-width: 812px){
     #frugalmap {
         height: 812px;
@@ -18,3 +13,30 @@ p {
     }
 }
 
+.nav-link{
+    font-family: 'HorrorScribbles';
+    font-size: 27px;
+}
+.navbar{
+    margin-top: 0.5em;
+    margin-left: 58%;
+    width: 42%;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    z-index: 500;
+    background: #000;
+    border-radius: 40px;
+}
+ul {
+    height: 18em;
+}
+
+button{
+    margin: 0 auto;
+    border: none;
+    outline-style: none;
+}
+a p{
+    color: #ff4500
+}
