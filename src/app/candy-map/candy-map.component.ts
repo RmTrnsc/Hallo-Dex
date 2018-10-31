@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import * as L from 'leaflet';
 
 @Component({
@@ -9,7 +9,7 @@ import * as L from 'leaflet';
 })
 export class CandyMapComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: Http) { }
 
   ngOnInit() {
   
