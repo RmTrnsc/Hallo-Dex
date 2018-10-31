@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AdressService } from './adress.service'
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { MapServiceService } from './map-service.service';
 import { CandyListComponent } from './candy-list/candy-list.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { CandyMapComponent } from './candy-map/candy-map.component';
@@ -35,12 +34,13 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
         { path: 'candymap', component: CandyMapComponent, pathMatch: 'full'},
         { path: 'recapitulatif', component: RecapitulatifComponent, pathMatch: 'full'},
         { path: 'acceuil', component: AcceuilComponent, pathMatch: 'full'},
+        { path: 'main', component: MainComponent, pathMatch: 'full'},
         { path: '', redirectTo: 'acceuil', pathMatch: 'full'}
       ],
       {useHash: true}
     )
   ],
-  providers: [MapServiceService,AdressService],
+  providers: [AdressService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
