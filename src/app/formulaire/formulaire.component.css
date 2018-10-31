@@ -1,38 +1,36 @@
-/*
-*{
-    margin: 0 auto;
 
-}
-.main-container {
-background-image: url('/src/assets/halloween.jpg');
-    width: 100%;
-    height: 50em;
-}
-
-.signup {
-    text-align: center;
-    color: white;
-}
-*/
 .container {
     background-image: url('/src/assets/halloween.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: right;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50em;
+    height: 41.6em;
     margin-bottom: 0;
     }
-
-
+@media only screen and (min-device-height: 668px) and (max-device-height: 812px){
+    .container {
+        height: 50.7em;
+    }
+}
+:placeholder {
+    opacity: 1;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+input {
+    font-family: 'HorrorScribbles';
+    font-size: 25px;
+}
 .send-button{
     background: #f78f08;
     width:100%;
     font-weight: 600;
     color:#fff;
     padding: 8px 25px;
-    }
-    .g-button{
+}
+.g-button{
     color: #fff !important;
     border: 1px solid #EA4335;
     background: #ea4335 !important;
@@ -40,39 +38,44 @@ background-image: url('/src/assets/halloween.jpg');
     font-weight: 600;
     color:#fff;
     padding: 8px 25px;
-    }
-    .my-input{
+}
+.my-input{
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     cursor: text;
     padding: 8px 10px;
     transition: border .1s linear;
-    }
-    .header-title{
+}
+.header-title{
     margin: 5rem 0;
-    }
-    h1{
+}
+.wv-heading--title{
     text-align: center;
-    font-size: 31px;
+    font-size: 80px;
     line-height: 40px;
     font-weight: 600;
-    color:#4c5357;
-    }
-    h2{
+    color:#ff4500;
+    font-family: 'HorrorScribbles';
+}
+.wv-heading--subtitle{
+    margin-top: 1em;
     text-align: center;
-    color: #5e8396;
-    font-size: 21px;
+    color: #bcbebe;
+    font-size: 38px;
     line-height: 32px;
     font-weight: 400;
-    }
-    .login-or {
+    font-family: 'HorrorScribbles';
+}
+.login-or {
     position: relative;
-    color: #aaa;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    }
-    .span-or {
+}
+.span-or {
+    font-family: 'HorrorScribbles';
+    font-size: 28px;
     display: block;
     position: absolute;
     left: 50%;
@@ -81,25 +84,19 @@ background-image: url('/src/assets/halloween.jpg');
     background-color: r2821a(0, 0, 0, 0);
     width: 50px;
     text-align: center;
-    }
-    .hr-or {
+}
+.form-group .btn {
+    margin-top: 1.5em;
+}
+.hr-or {
     height: 1px;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    }
-    @media screen and (max-width:480px){
-    h1{
-    font-size: 26px;
-    }
-    h2{
-    font-size: 20px;
-    }
-    input {
-        background-color: rgba(0, 0, 0, 0);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid #fff;
-
-    }
+}
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #f78f08;
 }
