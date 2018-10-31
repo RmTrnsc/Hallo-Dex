@@ -11,6 +11,7 @@ import { CandyListComponent } from './candy-list/candy-list.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { CandyMapComponent } from './candy-map/candy-map.component';
 import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';
+import { CandyFightComponent } from './candy-fight/candy-fight.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
     CandyListComponent,
     AcceuilComponent,
     CandyMapComponent,
-    RecapitulatifComponent
+    RecapitulatifComponent,
+    CandyFightComponent
   ],
 
   imports: [
@@ -29,6 +31,7 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
     HttpClientModule,
     RouterModule.forRoot(
       [
+        { path: 'candyfight', component: CandyFightComponent, pathMatch:'full'},
         { path: 'candylist', component: CandyListComponent, pathMatch:'full'},
         { path: 'formulaire', component: FormulaireComponent, pathMatch: 'full' },
         { path: 'candymap', component: CandyMapComponent, pathMatch: 'full'},
