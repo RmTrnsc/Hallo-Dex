@@ -2,15 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { FormulaireComponent } from './formulaire/formulaire.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { AdressService } from './adress.service'
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { CandyListComponent } from './candy-list/candy-list.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { CandyMapComponent } from './candy-map/candy-map.component';
 import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';
+import { CandyService } from './candy.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot(
       [
         { path: 'candylist', component: CandyListComponent, pathMatch:'full'},
@@ -40,7 +41,7 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
       {useHash: true}
     )
   ],
-  providers: [AdressService],
+  providers: [CandyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
