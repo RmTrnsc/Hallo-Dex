@@ -4,7 +4,7 @@ import { RouterModule} from '@angular/router';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { AdressService } from './adress.service'
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { CandyListComponent } from './candy-list/candy-list.component';
@@ -42,7 +42,7 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
       {useHash: true}
     )
   ],
-  providers: [AdressService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
