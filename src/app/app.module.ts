@@ -36,6 +36,8 @@ import { CandyService } from './candy.service';
         { path: 'recapitulatif', component: RecapitulatifComponent, pathMatch: 'full'},
         { path: 'acceuil', component: AcceuilComponent, pathMatch: 'full'},
         { path: 'main', component: MainComponent, pathMatch: 'full'},
+        { path: 'recapitulatif', component: RecapitulatifComponent, pathMatch: 'full'},
+        { path: 'candymap', component: CandyMapComponent, pathMatch: 'full'},
         { path: '', redirectTo: 'acceuil', pathMatch: 'full'}
       ],
       {useHash: true}

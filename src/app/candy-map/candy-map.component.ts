@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CandyService } from '../candy.service';
 
+
 @Component({
   selector: 'app-candy-map',
   templateUrl: './candy-map.component.html',
