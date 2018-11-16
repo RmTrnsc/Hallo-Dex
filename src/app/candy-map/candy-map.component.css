@@ -27,15 +27,4 @@ a p{
     text-align: center;
     color: #ff4500
 }
-#main{
-    width:400px;
-    padding:30px;
-    margin:auto;
-    background-color:#EEE;
-}
-ul{
-    list-style-type:none;
-}
-h1{
-    margin-top:0;
-}
+

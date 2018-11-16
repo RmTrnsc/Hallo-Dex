@@ -9,7 +9,7 @@
     margin-left: 58%;
     width: 42%;
     opacity: 0.85;
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 500;
     background: #000;
@@ -34,10 +34,7 @@ a p{
 
 td {
     font-family: 'HorrorScribbles';
-    font-size: 22px;
-}
-.table {
-    margin-top: 4em;
+    font-size: 26px;
 }
 #enTete {
     font-size: 28px;
